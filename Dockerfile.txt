@@ -1,0 +1,13 @@
+# 调用docker hub 
+FROM tomcat
+
+# 创建者
+MAINTAINER jh.peng
+# 添加项目到webapps
+# ADD HelloWorld.war /usr/local/tomcat/webapps/
+
+# 暴露端口
+EXPOSE 8080
+
+# 启动tomcat （指定容器启动时运行的命令）
+CMD ["catalina.sh", "run"]
